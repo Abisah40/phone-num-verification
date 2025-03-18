@@ -1,18 +1,18 @@
 import requests
-api_kep = '61bc589ac37c4b1ea39bfb34a98b771b'
-url = f'https://apilayer.net/api/validate?access_key={api_kep}'
+api_key = '61bc589ac37c4b1ea39bfb34a98b771b'
+url = f'https://apilayer.net/api/validate?access_key={api_key}'
 
 try:
         
     def number_val(number):
-        '''create a function number_val above'''
+        '''create a function called number_val and pass in number'''
         
         params = {
-            api_kep : 'access_key',
+            api_key : 'access_key',
             'number' : f'{country_code}{number_search}',
             'format' : country_code
         }
-        '''define all the params need in a dictionary above'''
+        '''define all the params needed in the dictionary above'''
 
         response = requests.get(url, params=params)
         # print(response)
